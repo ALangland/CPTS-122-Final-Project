@@ -9,13 +9,24 @@ public:
 	Game(float screenW = 800);
 	~Game(void);
 
+	void difficultySelect(int mines);
+	float getTime(void);
+
 	void populateMines(void);
 
 	void drawGameBoard(sf::RenderWindow& window);
-	void updateGameBoard(sf::RenderWindow& window);
+	void updateGameBoard(sf::RenderWindow& window, float elapsedTime);
+
 
 	int checkSurroundings(int tCol, int tRow);
 	void revealEmpties(int tCol, int tRow);
+
+	void checkStatus(void);
+	bool checkWin(void);
+	bool checkLose(void);
+
+	void stopTimer(bool won);
+	void revealBoard(void);
 
 private:
 
@@ -26,5 +37,10 @@ private:
 	bool hasLost;
 	int mines;
 
+	float nTimer;
+	sf::Text timer;
+	sf::Font timerFont;
 };
+
+
 

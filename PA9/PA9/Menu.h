@@ -17,7 +17,6 @@ public:
 
 private:
 
-	int iChoice;
 	sf::RectangleShape titleBox;
 	sf::Text title;
 	Button* options[3];

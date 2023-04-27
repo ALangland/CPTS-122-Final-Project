@@ -3,7 +3,6 @@
 
 Menu::Menu(float width, float height) {
 
-	iChoice = 1;
 	font.loadFromFile("LSANS.ttf");
 
 	float centerX = 0.0;

@@ -19,9 +19,21 @@ Game::Game(float screenW) {
 	hasWon = false;
 	hasLost = false;
 	mines = 80;
+	nTimer = 0.0;
+
+	timerFont.loadFromFile("LSANS.ttf");
+	timer.setString("TIME: 0.00");
+	timer.setLetterSpacing(1.1);
+	timer.setFont(timerFont);
+	timer.setCharacterSize(30);
+	timer.setPosition(sf::Vector2f(15, 8));
 }
 
 Game::~Game(void) {
+}
+
+void Game::difficultySelect(int cMines) {
+	mines = cMines;
 }
 
 int Game::checkSurroundings(int tCol, int tRow) {
@@ -93,9 +105,10 @@ void Game::drawGameBoard(sf::RenderWindow& window) {
 			board[c][r].drawbutton(window);
 		}
 	}
+	window.draw(timer);
 }
 
-void Game::updateGameBoard(sf::RenderWindow& window) {
+void Game::updateGameBoard(sf::RenderWindow& window, float elapsedTime) {
 	sf::Vector2i mPos = sf::Mouse::getPosition(window);
 	for (int r = 0; r < tHeight; r++) {
 		for (int c = 0; c < tWidth; c++) {
@@ -107,6 +120,10 @@ void Game::updateGameBoard(sf::RenderWindow& window) {
 				}
 			}
 		}
+	}
+	if (hasWon != true && hasLost != true) {
+		nTimer = elapsedTime;
+		timer.setString("TIMER: " + to_string(nTimer) + " sec");
 	}
 }
 
@@ -163,4 +180,50 @@ void Game::revealEmpties(int tCol, int tRow) {
 			revealEmpties(tCol, tRow - 1);
 		}
 	}
+}
+
+void Game::checkStatus(void) {
+	int status = 0;
+	for (int r = 0; r < tHeight; r++) {
+		for (int c = 0; c < tWidth; c++) {
+			if (board[c][r].getContents() == 9 && board[c][r].isRevealed() == true) {
+				status = 1;
+				hasLost = true;
+			}
+		}
+	}
+	if (status == 0) {
+		bool incomplete = true;
+		for (int r = 0; r < tHeight; r++) {
+			for (int c = 0; c < tWidth; c++) {
+				if (board[c][r].getContents() != 9 && board[c][r].isRevealed() == false) {
+					status = 1;
+				}
+			}
+		}
+		if (status == 0) {
+			hasWon = true;
+		}
+	}
+}
+
+bool Game::checkWin(void) {
+	return hasWon;
+}
+
+bool Game::checkLose(void) {
+	return hasLost;
+}
+
+void Game::stopTimer(bool won) {
+	if (won == true) {
+		timer.setString("You Won! Final Time: " + to_string(nTimer) + " seconds");
+	}
+	if (won == false) {
+		timer.setString("You Lose!");
+	}
+}
+
+void Game::revealBoard(void) {
+
 }
