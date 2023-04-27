@@ -6,10 +6,8 @@ using namespace std;
 #include <sstream>
 
 
-//leaderboard class that displays best times, saves them to file, stores initials
-//maybe have a button that goes to the leaderboard page? or just have them displayed on side
-//im thinking a vertically heavy rectangle with maybe 10 best times displayed, if a time better than one of the top 10 is set then
-//remove the worst time from the file and update the leaderboard with the new time
+//Author: Ethan Burzynski
+
 class Leaderboard {
 public:
 	Leaderboard() {

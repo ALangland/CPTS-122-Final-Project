@@ -28,7 +28,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="leaderboard.txt" />
     <Text Include="test.txt" />
+    <Text Include="leaderboard.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
