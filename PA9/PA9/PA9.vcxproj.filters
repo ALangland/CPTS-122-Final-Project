@@ -18,13 +18,17 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Leaderboard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="leaderboard.txt" />
+    <Text Include="test.txt" />
   </ItemGroup>
 </Project>

@@ -132,11 +132,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Button.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.hpp" />
+    <ClInclude Include="Leaderboard.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="leaderboard.txt" />
+    <Text Include="test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

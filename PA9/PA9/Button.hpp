@@ -6,6 +6,9 @@ using namespace std;
 //this is a test comment
 class Button : public sf::RectangleShape{
 public:
+	Button() {
+
+	}
 	Button(float x, float y, float width, float height, string nText, sf::Color nNormalColor, sf::Color nHoverColor, sf::Color nPressedColor, bool nChangeable) {
 		this->buttonShape.setSize(sf::Vector2f(width, height));
 		this->buttonShape.setPosition(sf::Vector2f(x, y)); 
@@ -15,8 +18,8 @@ public:
 		this->text.setPosition(0, 0);
 		this->font.loadFromFile("isocpeur.ttf");
 		this->text.setFont(font);
-		this->text.setPosition(this->buttonShape.getPosition().x + this->buttonShape.getGlobalBounds().width / 2.0 - this->text.getGlobalBounds().width / 2.0, 
-							   this->buttonShape.getPosition().y + this->buttonShape.getGlobalBounds().height / 2.0 - this->text.getGlobalBounds().height / 2.0);
+		this->text.setPosition(this->buttonShape.getPosition().x + (this->buttonShape.getGlobalBounds().width - this->text.getGlobalBounds().width) / 2.0, 
+							   this->buttonShape.getPosition().y + (this->buttonShape.getGlobalBounds().height - this->text.getGlobalBounds().height) / 2.0);
 		this->normalColor = nNormalColor;
 		this->buttonShape.setFillColor(nNormalColor);
 		this->hoverColor = nHoverColor;
@@ -42,6 +45,8 @@ public:
 		}
 		if (this->pressed == true) {
 			this->buttonShape.setFillColor(this->pressedColor);
+			//this->text.setRotation(this->text.getRotation() + 0.05);
+			//funny rotation thing
 		}
 		else if (this->hovered == true) {
 			this->buttonShape.setFillColor(this->hoverColor);
