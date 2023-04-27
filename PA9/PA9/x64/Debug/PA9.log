@@ -1,8 +1,38 @@
-﻿  main.cpp
+﻿  Game.cpp
 C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(20,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(19,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(51,88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(50,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(9,49): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(9,40): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Game.cpp(14,58): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Game.cpp(15,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Game.cpp(26,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Game.cpp(89,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameTile.cpp
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(20,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(19,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(51,88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(50,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Menu.cpp
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(20,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(19,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(51,88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(50,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Menu.cpp(13,28): warning C4305: 'argument': truncation from 'double' to 'float'
+  dSelector.cpp
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(20,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(19,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(51,88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(50,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\dSelector.cpp(12,26): warning C4305: 'argument': truncation from 'double' to 'float'
+  main.cpp
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(20,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(19,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(51,88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(50,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Leaderboard.hpp(76,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Leaderboard.hpp(75,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(28,49): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(28,40): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(147,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
   PA9.vcxproj -> C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\x64\Debug\PA9.exe

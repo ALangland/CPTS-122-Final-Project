@@ -2,6 +2,8 @@
 #include "Button.hpp"
 #include "GameTile.hpp"
 
+//Author: Alex Langland
+
 class Game {
 
 public:

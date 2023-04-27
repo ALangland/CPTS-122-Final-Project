@@ -47,5 +47,13 @@
     <ClInclude Include="Difficulty.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Leaderboard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="leaderboard.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

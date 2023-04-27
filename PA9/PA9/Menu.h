@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include "Button.hpp"
 
+//Author: Alex Langland
+
 class Menu {
 
 public:

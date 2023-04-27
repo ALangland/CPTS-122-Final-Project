@@ -99,6 +99,9 @@ public:
 		text.setCharacterSize(charSize);
 		text.setFillColor(color);
 	}
+	void setTextSize(int newSize) {
+		text.setCharacterSize(newSize);
+	}
 	void setText(sf::String& newText) {
 		text.setString(newText);
 	}

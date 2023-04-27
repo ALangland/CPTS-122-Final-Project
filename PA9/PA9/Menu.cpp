@@ -1,6 +1,8 @@
 #include "Menu.h"
 #include "Button.hpp"
 
+//Author: Alex Langland
+
 Menu::Menu(float width, float height) {
 
 	font.loadFromFile("LSANS.ttf");

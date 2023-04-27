@@ -1,6 +1,7 @@
 #include "Button.hpp"
 #include "GameTile.hpp"
 
+//Author: Alex Langland
 using std::to_string;
 
 Tile::Tile() {

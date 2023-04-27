@@ -29,10 +29,10 @@ public:
 	}
 	void drawLeaderboard(sf::RenderWindow& window, float x, float y) {
 		sf::Font font;
-		font.loadFromFile("isocpeur.ttf");
+		font.loadFromFile("LSANS.ttf");
 		sf::Text myText;
 		myText.setFont(font);
-		myText.setFillColor(sf::Color::Black);
+		myText.setFillColor(sf::Color::White);
 		myText.setCharacterSize(16);
 		this->fileStream.close();
 		this->fileStream.open("leaderboard.txt");
@@ -43,10 +43,11 @@ public:
 		rectangleSize.x = 140;
 		rectangleSize.y = 40;
 		string nString;
-		myText.setString("Leaderboard");
-		myText.setPosition(x + (rectangleSize.x - myText.getGlobalBounds().width) / 2.0,
-			y - 40 + (rectangleSize.y -myText.getGlobalBounds().height) / 2.0);
+		myText.setString("LEADERBOARD");
+		myText.setStyle(sf::Text::Bold);
+		myText.setPosition(100, 50);
 		window.draw(myText);
+		myText.setStyle(sf::Text::Regular);
 		for (int i = 0; i < 10; i++) {
 			//draw rectangle using x and y
 			//calculate center for the text
@@ -66,7 +67,7 @@ public:
 			myText.setString(nString);
 			//creating rectangle
 			sf::RectangleShape mRect;
-			mRect.setOutlineColor(sf::Color::Black);
+			mRect.setOutlineColor(sf::Color::White);
 			mRect.setOutlineThickness(1);
 			mRect.setFillColor(sf::Color(70, 70, 70, 200));
 			mRect.setSize(rectangleSize);

@@ -36,6 +36,10 @@ void Game::difficultySelect(int cMines) {
 	mines = cMines;
 }
 
+float Game::getTime(void) {
+	return nTimer;
+}
+
 int Game::checkSurroundings(int tCol, int tRow) {
 	int mNear = 0;
 	if (tCol != 0) {
@@ -118,6 +122,7 @@ void Game::updateGameBoard(sf::RenderWindow& window, float elapsedTime) {
 				if (board[c][r].getContents() == 0) {
 					revealEmpties(c, r);
 				}
+				checkStatus();
 			}
 		}
 	}
@@ -225,5 +230,11 @@ void Game::stopTimer(bool won) {
 }
 
 void Game::revealBoard(void) {
-
+	for (int r = 0; r < tHeight; r++) {
+		for (int c = 0; c < tWidth; c++) {
+			if (board[r][c].isRevealed() == false) {
+				board[c][r].revealContents();
+			}
+		}
+	}
 }
