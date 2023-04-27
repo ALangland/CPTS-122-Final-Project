@@ -4,6 +4,21 @@
 
 //Author: Alex Langland
 
+/*
+CLASS GAME
+
+This Class encapsulates the Minefield of Tiles, as well as the Timer, and runs most of the Game Logic.
+
+The functions within are capable of completely managing the Game Board and Timer,
+This class communicates with main through the "hasWon" and "hasLost" tags, representing the status of the game.
+
+This class also contains tWidth and tHeight, representing how many Tiles the game board is made up of, and mines, the total amount of mines
+to be placed into the Minefield by the populateMines() function.
+
+The timer is managed by this class and displayed alongside the Tile Array.
+
+*/
+
 class Game {
 
 public:
@@ -29,6 +44,8 @@ public:
 
 	void stopTimer(bool won);
 	void revealBoard(void);
+
+	void resetBoard(float screenW);
 
 private:
 

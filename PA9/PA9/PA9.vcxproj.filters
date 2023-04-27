@@ -30,6 +30,12 @@
     <ClCompile Include="dSelector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Leaderboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h">
@@ -50,9 +56,18 @@
     <ClInclude Include="Leaderboard.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="README.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
     <Text Include="leaderboard.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="testLeaderboard.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

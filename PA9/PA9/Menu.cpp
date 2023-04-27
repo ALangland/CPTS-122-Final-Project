@@ -3,10 +3,12 @@
 
 //Author: Alex Langland
 
+//Constructor for the Main Menu
 Menu::Menu(float width, float height) {
 
 	font.loadFromFile("LSANS.ttf");
 
+	//Place the Title
 	float centerX = 0.0;
 	title.setString("MINESWEEPER");
 	title.setStyle(sf::Text::Underlined | sf::Text::Bold);
@@ -23,6 +25,7 @@ Menu::Menu(float width, float height) {
 
 	float bX = width / 2 - 75;
 
+	//Initialize the Buttons able to be clicked on the main menu
 	options[0] = new Button(bX, (height / 8) + 130, 150, 80, "Play Game", sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 255), sf::Color(20, 20, 20, 200), true);
 
 	options[1] = new Button(bX, (height / 8) + 230, 150, 80, "Leaderboard", sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 255), sf::Color(20, 20, 20, 200), true);
@@ -31,9 +34,13 @@ Menu::Menu(float width, float height) {
 
 }
 
+//Default Destructor
 Menu::~Menu() {
 }
 
+//Check the position of the Mouse against the position of the Buttons,
+//Returns an integer referring to the index of which button is clicked, returns 0 if none are clicked.
+//Also updates the color of the button based on whether the mouse is off of it, hovering over, or clicking on it.
 int Menu::updateButtons(sf::RenderWindow& window) {
 	sf::Vector2i mPos = sf::Mouse::getPosition(window);
 	int clicked = 0;
@@ -46,6 +53,7 @@ int Menu::updateButtons(sf::RenderWindow& window) {
 	return clicked;
 }
 
+//Draws the elements of the Menu
 void Menu::displayMenu(sf::RenderWindow& window) {
 	window.draw(titleBox);
 	window.draw(title);

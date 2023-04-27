@@ -2,7 +2,26 @@
 using namespace std;
 #include "SFML\Graphics.hpp"
 #include <string>
+
 //Author: Ethan Burzynski
+
+/*
+CLASS BUTTON
+
+This Class is derived from the SFML class RectangleShape, and represents the basework for a Clickable Button.
+
+This class consists of function to define the Text within and Outer Rectangle, as well as functions to Draw these two elements.
+The button is made functional by the updateButton() function, which checks if the given mouse position is currently within
+the Button's are.
+
+This class contains the pressed and hovered tags to indicate the button's status in relation to the mouse.
+The "changeable" tag represents whether or not the Button is active, if it is false the button will not react
+to being hovered over and will not react to being clicked.
+
+The function also contains many functions to communicate Abstracted elements with other functions,
+such as the Tile Class.
+
+*/
 
 class Button : public sf::RectangleShape{
 public:
@@ -59,6 +78,11 @@ public:
 	}
 	~Button() {
 
+	}
+	void setPos(float x, float y) {
+		this->buttonShape.setPosition(sf::Vector2f(x, y));
+		this->text.setPosition(this->buttonShape.getPosition().x + this->buttonShape.getLocalBounds().width / 2.0 - this->text.getLocalBounds().width / 2.0,
+			this->buttonShape.getPosition().y + this->buttonShape.getLocalBounds().height / 2.0 - this->text.getLocalBounds().height / 2.0);
 	}
 	void updateButton(sf::Vector2f mousePos) {
 		//update function for pressing the button and changing color when hovering

@@ -135,8 +135,10 @@
     <ClCompile Include="dSelector.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameTile.cpp" />
+    <ClCompile Include="Leaderboard.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Difficulty.hpp" />
@@ -144,12 +146,15 @@
     <ClInclude Include="GameTile.hpp" />
     <ClInclude Include="Leaderboard.hpp" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="leaderboard.txt" />
+    <Text Include="README.txt" />
+    <Text Include="testLeaderboard.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

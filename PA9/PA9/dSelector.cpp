@@ -2,6 +2,9 @@
 #include "Button.hpp"
 #include "Difficulty.hpp"
 
+//Author: Alex Langland
+
+//Construct the Elements of the Difficulty Selector Menu
 dSelector::dSelector(float width, float height) {
 
 	font.loadFromFile("LSANS.ttf");
@@ -27,20 +30,30 @@ dSelector::dSelector(float width, float height) {
 	options[2] = new Button(bX, (height / 8) + 200, 180, 70, "Normal: 80 Mines", sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 255), sf::Color(20, 20, 20, 200), true);
 	options[3] = new Button(bX + 220, (height / 8) + 200, 180, 70, "HARD: 100 Mines", sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 255), sf::Color(20, 20, 20, 200), true);
 
+	instruction.setString("TO PLAY: Begin clicking on squares to reveal what they contain.\nThe Goal of the game is to reveal all Squares that do not contain\na mine. However, clicking on a mine will result in losing the game.\nEach number found beneath a square how many mines are in the\nsurrounding eight spaces.");
+	instruction.setFont(font);
+	instruction.setCharacterSize(23);
+	instruction.setPosition(bX - 175, height / 8 + 340);
+
 }
 
+//Default Constructor
 dSelector::~dSelector() {
 
 }
 
+//Draw the Menu
 void dSelector::drawSelector(sf::RenderWindow& window) {
 	window.draw(box);
 	window.draw(top);
 	for (int i = 0; i < 4; i++) {
 		options[i]->drawbutton(window);
 	}
+	window.draw(instruction);
 }
 
+//Update the menu based on mouse position and click
+//Returns how many mines have been selected, if none have been pressed returns 0.
 int dSelector::updateSelector(sf::RenderWindow& window) {
 	sf::Vector2i mPos = sf::Mouse::getPosition(window);
 	int clicked = 0, mines = 0;
