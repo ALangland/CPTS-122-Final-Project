@@ -2,6 +2,7 @@
 #define MENU
 
 #include <SFML/Graphics.hpp>
+#include "Button.hpp"
 
 class Menu {
 
@@ -12,14 +13,14 @@ public:
 
 	void displayMenu(sf::RenderWindow &window);
 
-	void moveChoice(int dir);
-
+	int updateButtons(sf::RenderWindow& window);
 
 private:
 
 	int iChoice;
 	sf::RectangleShape titleBox;
-	sf::Text textBlocks[4];
+	sf::Text title;
+	Button* options[3];
 	sf::Font font;
 
 };
