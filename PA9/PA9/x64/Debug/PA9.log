@@ -1,8 +1,8 @@
 ﻿  main.cpp
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(22,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(21,60): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Leaderboard.hpp(50,11): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Leaderboard.hpp(49,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Leaderboard.hpp(77,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Leaderboard.hpp(76,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(20,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(19,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(51,88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\Button.hpp(50,109): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(9,49): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\PA9\main.cpp(9,40): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
   PA9.vcxproj -> C:\Users\magma\source\repos\----CPTS 122----\Hackathon\CPTS-122-Final-Project\PA9\x64\Debug\PA9.exe

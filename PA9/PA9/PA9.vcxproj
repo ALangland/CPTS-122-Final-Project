@@ -132,10 +132,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Leaderboard.hpp" />
+    <ClCompile Include="dSelector.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameTile.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="leaderboard.txt" />
+    <ClInclude Include="Difficulty.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="GameTile.hpp" />
+    <ClInclude Include="Menu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Button.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
